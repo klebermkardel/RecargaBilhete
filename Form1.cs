@@ -15,6 +15,8 @@ namespace RecargaBilhete
         public Form1()
         {
             InitializeComponent();
+
+            LbTitle.Text = "Seja bem vindo ao Sistema RecargaBilhete";
         }
     }
 }

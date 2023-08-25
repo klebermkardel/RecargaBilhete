@@ -28,20 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.LbTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // LbTitle
+            // 
+            this.LbTitle.AutoSize = true;
+            this.LbTitle.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbTitle.Location = new System.Drawing.Point(180, 45);
+            this.LbTitle.Name = "LbTitle";
+            this.LbTitle.Size = new System.Drawing.Size(0, 33);
+            this.LbTitle.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 580);
+            this.Controls.Add(this.LbTitle);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label LbTitle;
     }
 }
 
