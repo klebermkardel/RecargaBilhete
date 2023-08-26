@@ -17,7 +17,7 @@ namespace RecargaBilhete
             InitializeComponent();
 
             LbTitle.Text = "Seja bem vindo ao Sistema RecargaBilhete";
-            LbTicketNumber.Text = "Insira o número do seu bilhete:";
+            LbOrder1.Text = "Insira o número do seu bilhete:";
         }
     }
 }

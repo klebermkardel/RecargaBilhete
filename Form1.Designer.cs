@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.LbTitle = new System.Windows.Forms.Label();
-            this.LbTicketNumber = new System.Windows.Forms.Label();
+            this.LbOrder1 = new System.Windows.Forms.Label();
             this.TbTicketNumber = new System.Windows.Forms.TextBox();
             this.BtnConfirm = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LbTicketNumber = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LbTitle
@@ -45,15 +45,15 @@
             this.LbTitle.TabIndex = 0;
             this.LbTitle.Text = "Seja bem vindo ao Sistema RecargaBilhete";
             // 
-            // LbTicketNumber
+            // LbOrder1
             // 
-            this.LbTicketNumber.AutoSize = true;
-            this.LbTicketNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbTicketNumber.Location = new System.Drawing.Point(327, 125);
-            this.LbTicketNumber.Name = "LbTicketNumber";
-            this.LbTicketNumber.Size = new System.Drawing.Size(281, 23);
-            this.LbTicketNumber.TabIndex = 1;
-            this.LbTicketNumber.Text = "Insira o número do seu bilhete:";
+            this.LbOrder1.AutoSize = true;
+            this.LbOrder1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbOrder1.Location = new System.Drawing.Point(327, 125);
+            this.LbOrder1.Name = "LbOrder1";
+            this.LbOrder1.Size = new System.Drawing.Size(281, 23);
+            this.LbOrder1.TabIndex = 1;
+            this.LbOrder1.Text = "Insira o número do seu bilhete:";
             // 
             // TbTicketNumber
             // 
@@ -76,25 +76,25 @@
             this.BtnConfirm.Text = "CONFIRMAR";
             this.BtnConfirm.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // LbTicketNumber
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(286, 323);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(190, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Número do bilhete:";
+            this.LbTicketNumber.AutoSize = true;
+            this.LbTicketNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbTicketNumber.Location = new System.Drawing.Point(286, 323);
+            this.LbTicketNumber.Name = "LbTicketNumber";
+            this.LbTicketNumber.Size = new System.Drawing.Size(190, 24);
+            this.LbTicketNumber.TabIndex = 4;
+            this.LbTicketNumber.Text = "Número do bilhete:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 580);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LbTicketNumber);
             this.Controls.Add(this.BtnConfirm);
             this.Controls.Add(this.TbTicketNumber);
-            this.Controls.Add(this.LbTicketNumber);
+            this.Controls.Add(this.LbOrder1);
             this.Controls.Add(this.LbTitle);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -106,10 +106,10 @@
         #endregion
 
         private System.Windows.Forms.Label LbTitle;
-        private System.Windows.Forms.Label LbTicketNumber;
+        private System.Windows.Forms.Label LbOrder1;
         private System.Windows.Forms.TextBox TbTicketNumber;
         private System.Windows.Forms.Button BtnConfirm;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LbTicketNumber;
     }
 }
 
