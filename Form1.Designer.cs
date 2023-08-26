@@ -31,6 +31,7 @@
             this.LbTitle = new System.Windows.Forms.Label();
             this.LbTicketNumber = new System.Windows.Forms.Label();
             this.TbTicketNumber = new System.Windows.Forms.TextBox();
+            this.BtnConfirm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LbTitle
@@ -39,31 +40,47 @@
             this.LbTitle.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbTitle.Location = new System.Drawing.Point(171, 45);
             this.LbTitle.Name = "LbTitle";
-            this.LbTitle.Size = new System.Drawing.Size(0, 33);
+            this.LbTitle.Size = new System.Drawing.Size(594, 33);
             this.LbTitle.TabIndex = 0;
+            this.LbTitle.Text = "Seja bem vindo ao Sistema RecargaBilhete";
             // 
             // LbTicketNumber
             // 
             this.LbTicketNumber.AutoSize = true;
             this.LbTicketNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbTicketNumber.Location = new System.Drawing.Point(319, 102);
+            this.LbTicketNumber.Location = new System.Drawing.Point(327, 125);
             this.LbTicketNumber.Name = "LbTicketNumber";
-            this.LbTicketNumber.Size = new System.Drawing.Size(0, 23);
+            this.LbTicketNumber.Size = new System.Drawing.Size(281, 23);
             this.LbTicketNumber.TabIndex = 1;
+            this.LbTicketNumber.Text = "Insira o número do seu bilhete:";
             // 
             // TbTicketNumber
             // 
             this.TbTicketNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbTicketNumber.Location = new System.Drawing.Point(343, 140);
+            this.TbTicketNumber.Location = new System.Drawing.Point(351, 163);
             this.TbTicketNumber.Name = "TbTicketNumber";
             this.TbTicketNumber.Size = new System.Drawing.Size(221, 30);
             this.TbTicketNumber.TabIndex = 2;
+            // 
+            // BtnConfirm
+            // 
+            this.BtnConfirm.BackColor = System.Drawing.Color.ForestGreen;
+            this.BtnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnConfirm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConfirm.ForeColor = System.Drawing.Color.White;
+            this.BtnConfirm.Location = new System.Drawing.Point(354, 223);
+            this.BtnConfirm.Name = "BtnConfirm";
+            this.BtnConfirm.Size = new System.Drawing.Size(217, 59);
+            this.BtnConfirm.TabIndex = 3;
+            this.BtnConfirm.Text = "CONFIRMAR";
+            this.BtnConfirm.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 580);
+            this.Controls.Add(this.BtnConfirm);
             this.Controls.Add(this.TbTicketNumber);
             this.Controls.Add(this.LbTicketNumber);
             this.Controls.Add(this.LbTitle);
@@ -79,6 +96,7 @@
         private System.Windows.Forms.Label LbTitle;
         private System.Windows.Forms.Label LbTicketNumber;
         private System.Windows.Forms.TextBox TbTicketNumber;
+        private System.Windows.Forms.Button BtnConfirm;
     }
 }
 
