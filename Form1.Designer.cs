@@ -32,6 +32,7 @@
             this.LbTicketNumber = new System.Windows.Forms.Label();
             this.TbTicketNumber = new System.Windows.Forms.TextBox();
             this.BtnConfirm = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LbTitle
@@ -75,11 +76,22 @@
             this.BtnConfirm.Text = "CONFIRMAR";
             this.BtnConfirm.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(286, 323);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Número do bilhete:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 580);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnConfirm);
             this.Controls.Add(this.TbTicketNumber);
             this.Controls.Add(this.LbTicketNumber);
@@ -97,6 +109,7 @@
         private System.Windows.Forms.Label LbTicketNumber;
         private System.Windows.Forms.TextBox TbTicketNumber;
         private System.Windows.Forms.Button BtnConfirm;
+        private System.Windows.Forms.Label label1;
     }
 }
 
