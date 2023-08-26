@@ -33,6 +33,9 @@
             this.TbTicketNumber = new System.Windows.Forms.TextBox();
             this.BtnConfirm = new System.Windows.Forms.Button();
             this.LbTicketNumber = new System.Windows.Forms.Label();
+            this.LbConfirmNumber = new System.Windows.Forms.Label();
+            this.BtnCancelNumber = new System.Windows.Forms.Button();
+            this.BtnConfirmNumber = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LbTitle
@@ -41,9 +44,8 @@
             this.LbTitle.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbTitle.Location = new System.Drawing.Point(171, 45);
             this.LbTitle.Name = "LbTitle";
-            this.LbTitle.Size = new System.Drawing.Size(594, 33);
+            this.LbTitle.Size = new System.Drawing.Size(0, 33);
             this.LbTitle.TabIndex = 0;
-            this.LbTitle.Text = "Seja bem vindo ao Sistema RecargaBilhete";
             // 
             // LbOrder1
             // 
@@ -51,9 +53,8 @@
             this.LbOrder1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbOrder1.Location = new System.Drawing.Point(327, 125);
             this.LbOrder1.Name = "LbOrder1";
-            this.LbOrder1.Size = new System.Drawing.Size(281, 23);
+            this.LbOrder1.Size = new System.Drawing.Size(0, 23);
             this.LbOrder1.TabIndex = 1;
-            this.LbOrder1.Text = "Insira o número do seu bilhete:";
             // 
             // TbTicketNumber
             // 
@@ -75,28 +76,68 @@
             this.BtnConfirm.TabIndex = 3;
             this.BtnConfirm.Text = "CONFIRMAR";
             this.BtnConfirm.UseVisualStyleBackColor = false;
+            this.BtnConfirm.Click += new System.EventHandler(this.BtnConfirm_Click);
             // 
             // LbTicketNumber
             // 
             this.LbTicketNumber.AutoSize = true;
             this.LbTicketNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbTicketNumber.Location = new System.Drawing.Point(286, 323);
+            this.LbTicketNumber.Location = new System.Drawing.Point(317, 322);
             this.LbTicketNumber.Name = "LbTicketNumber";
-            this.LbTicketNumber.Size = new System.Drawing.Size(190, 24);
+            this.LbTicketNumber.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LbTicketNumber.Size = new System.Drawing.Size(0, 24);
             this.LbTicketNumber.TabIndex = 4;
-            this.LbTicketNumber.Text = "Número do bilhete:";
+            // 
+            // LbConfirmNumber
+            // 
+            this.LbConfirmNumber.AutoSize = true;
+            this.LbConfirmNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbConfirmNumber.Location = new System.Drawing.Point(305, 373);
+            this.LbConfirmNumber.Name = "LbConfirmNumber";
+            this.LbConfirmNumber.Size = new System.Drawing.Size(0, 24);
+            this.LbConfirmNumber.TabIndex = 5;
+            // 
+            // BtnCancelNumber
+            // 
+            this.BtnCancelNumber.BackColor = System.Drawing.Color.Firebrick;
+            this.BtnCancelNumber.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnCancelNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelNumber.ForeColor = System.Drawing.Color.White;
+            this.BtnCancelNumber.Location = new System.Drawing.Point(488, 413);
+            this.BtnCancelNumber.Name = "BtnCancelNumber";
+            this.BtnCancelNumber.Size = new System.Drawing.Size(136, 59);
+            this.BtnCancelNumber.TabIndex = 7;
+            this.BtnCancelNumber.Text = "NÃO";
+            this.BtnCancelNumber.UseVisualStyleBackColor = false;
+            // 
+            // BtnConfirmNumber
+            // 
+            this.BtnConfirmNumber.BackColor = System.Drawing.Color.ForestGreen;
+            this.BtnConfirmNumber.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnConfirmNumber.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnConfirmNumber.ForeColor = System.Drawing.Color.White;
+            this.BtnConfirmNumber.Location = new System.Drawing.Point(309, 413);
+            this.BtnConfirmNumber.Name = "BtnConfirmNumber";
+            this.BtnConfirmNumber.Size = new System.Drawing.Size(136, 59);
+            this.BtnConfirmNumber.TabIndex = 6;
+            this.BtnConfirmNumber.Text = "SIM";
+            this.BtnConfirmNumber.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 580);
+            this.Controls.Add(this.BtnCancelNumber);
+            this.Controls.Add(this.BtnConfirmNumber);
+            this.Controls.Add(this.LbConfirmNumber);
             this.Controls.Add(this.LbTicketNumber);
             this.Controls.Add(this.BtnConfirm);
             this.Controls.Add(this.TbTicketNumber);
             this.Controls.Add(this.LbOrder1);
             this.Controls.Add(this.LbTitle);
             this.Name = "Form1";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -110,6 +151,9 @@
         private System.Windows.Forms.TextBox TbTicketNumber;
         private System.Windows.Forms.Button BtnConfirm;
         private System.Windows.Forms.Label LbTicketNumber;
+        private System.Windows.Forms.Label LbConfirmNumber;
+        private System.Windows.Forms.Button BtnCancelNumber;
+        private System.Windows.Forms.Button BtnConfirmNumber;
     }
 }
 
