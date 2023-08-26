@@ -109,6 +109,7 @@
             this.BtnCancelNumber.TabIndex = 7;
             this.BtnCancelNumber.Text = "NÃO";
             this.BtnCancelNumber.UseVisualStyleBackColor = false;
+            this.BtnCancelNumber.Click += new System.EventHandler(this.BtnCancelNumber_Click);
             // 
             // BtnConfirmNumber
             // 

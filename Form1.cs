@@ -12,6 +12,8 @@ namespace RecargaBilhete
 {
     public partial class Form1 : Form
     {
+
+        string ticketNumber = "";
         public Form1()
         {
             InitializeComponent();
@@ -20,15 +22,30 @@ namespace RecargaBilhete
             LbOrder1.Text = "Insira o número do seu bilhete:";
             BtnConfirmNumber.Visible = false;
             BtnCancelNumber.Visible = false;
+            LbConfirmNumber.Visible = false;
         }
 
         private void BtnConfirm_Click(object sender, EventArgs e)
         {
-            string ticketNumber = TbTicketNumber.Text;
+            ticketNumber = TbTicketNumber.Text;
             LbTicketNumber.Text = $"Número do bilhete: {ticketNumber}";
             LbConfirmNumber.Text = "O número inserido está correto?";
+            LbConfirmNumber.Visible = true;
             BtnConfirmNumber.Visible = true;
             BtnCancelNumber.Visible = true;
+        }
+
+        private void BtnCancelNumber_Click(object sender, EventArgs e)
+        {
+            TbTicketNumber.Text = "";
+
+            ticketNumber = "";
+            LbTicketNumber.Text = "";
+
+            LbConfirmNumber.Visible = false;
+            BtnConfirmNumber.Visible = false;
+            BtnCancelNumber.Visible = false;
+            
         }
     }
 }
