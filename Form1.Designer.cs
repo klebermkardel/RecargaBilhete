@@ -36,6 +36,8 @@
             this.LbConfirmNumber = new System.Windows.Forms.Label();
             this.BtnCancelNumber = new System.Windows.Forms.Button();
             this.BtnConfirmNumber = new System.Windows.Forms.Button();
+            this.LbMsgEqual0 = new System.Windows.Forms.Label();
+            this.LbMsgMinor9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LbTitle
@@ -63,6 +65,7 @@
             this.TbTicketNumber.Name = "TbTicketNumber";
             this.TbTicketNumber.Size = new System.Drawing.Size(221, 30);
             this.TbTicketNumber.TabIndex = 2;
+            this.TbTicketNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // BtnConfirm
             // 
@@ -124,11 +127,31 @@
             this.BtnConfirmNumber.Text = "SIM";
             this.BtnConfirmNumber.UseVisualStyleBackColor = false;
             // 
+            // LbMsgEqual0
+            // 
+            this.LbMsgEqual0.AutoSize = true;
+            this.LbMsgEqual0.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbMsgEqual0.Location = new System.Drawing.Point(312, 322);
+            this.LbMsgEqual0.Name = "LbMsgEqual0";
+            this.LbMsgEqual0.Size = new System.Drawing.Size(0, 24);
+            this.LbMsgEqual0.TabIndex = 8;
+            // 
+            // LbMsgMinor9
+            // 
+            this.LbMsgMinor9.AutoSize = true;
+            this.LbMsgMinor9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbMsgMinor9.Location = new System.Drawing.Point(246, 322);
+            this.LbMsgMinor9.Name = "LbMsgMinor9";
+            this.LbMsgMinor9.Size = new System.Drawing.Size(0, 24);
+            this.LbMsgMinor9.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 580);
+            this.Controls.Add(this.LbMsgMinor9);
+            this.Controls.Add(this.LbMsgEqual0);
             this.Controls.Add(this.BtnCancelNumber);
             this.Controls.Add(this.BtnConfirmNumber);
             this.Controls.Add(this.LbConfirmNumber);
@@ -155,6 +178,8 @@
         private System.Windows.Forms.Label LbConfirmNumber;
         private System.Windows.Forms.Button BtnCancelNumber;
         private System.Windows.Forms.Button BtnConfirmNumber;
+        private System.Windows.Forms.Label LbMsgEqual0;
+        private System.Windows.Forms.Label LbMsgMinor9;
     }
 }
 
